@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!--
+        Formularios. 
+        Las opciones de formulario deben incluir un action (dónde)
+        y un method (cómo)
+    -->
+    <form action="formularios.html" method="GET">
+        <!--Acá se incluyen todas las etiquetas encargadas de
+            recopilar información para ser enviada por el 
+            formulario
+        -->
+        <!--Label: etiqueta de un cierto campo de tu formulario.
+            Una etiqueta se conecta con un campo del formulario a través
+            del id del campo.
+        -->
+        <label for="nombre">Nombre:</label>
+        <!--Input: Tipo de campo para textos cortos. Tiene un id-->
+        <input type="text" id="nombre" name="nombre">
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <label for="password">Contraseña</label>
+        <!--Input tipo password para contraseñas-->
+        <input type="password" id="password" name="pass">
+        <!--Input tipo radio para selección única-->
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="prefiero-no-decir">Prefiero no decir</label>
+        <input type="radio" id="prefiero-no-decir" name="genero" value="prefiero-no-decir">
+        <!--Input tipo menú desplegable-->
+        <select name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="prefiero-no-decir">Prefiero no decir</option>
+        </select>
+        <!--Input checkboxes-->
+        <label for="azul">Azul</label>
+        <input type="checkbox" id="azul" name="color" value="azul">
+        <label for="verde">Verde</label>
+        <input type="checkbox" id="verde" name="color" value="verde">
+        <label for="rojo">Rojo</label>
+        <input type="checkbox" id="rojo" name="color" value="rojo">
+        <label for="negro">Negro</label>
+        <input type="checkbox" id="negro" name="color" value="negro">
+        <label for="morado">Morado</label>
+        <input type="checkbox" id="morado" name="color" value="morado">
+        <!--Input escondido (hidden). Permite mandar información dentro
+        de tu formulario que no quieres que vea el usuario-->
+        <input type="hidden" name="id" value="7"></input>
+        <!--Envio de elementos. También se puede utilizar un button-->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

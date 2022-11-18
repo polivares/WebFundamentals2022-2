@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*
+            Esto define un comentario en lenguaje CSS 
+        */
+        /* Selector de etiquetas. Ej: etiqueta p
+            Estamos modificando el tamaño de la fuente al doble
+            (200%)
+        */
+        p{
+            font-size: 200%;
+        }
+
+        /* Selectores de clases. Ej: .clase1
+            Modificaremos el color de fondo de la clase1 a amarillo verdoso
+        */
+        .clase1{
+            background-color: greenyellow;
+        }
+
+        .clase2{
+            background-color: yellow;
+        }
+
+        /* Selector de ids. Ej: #especial
+            Modificaremos el borde del elemento especial
+        */
+        #especial{
+            border: 2px dashed blue ;
+        }
+
+        /* Selector de un elemento dentro de otro. Ej. párrafos
+        dentro de un elemento de la clase 1
+        */
+        .clase1 p{
+            border: 2px solid black;
+            background-color: cadetblue;
+        }
+    </style>
+    <title>Selectores</title>
+</head>
+<body>
+    <h1>Selectores</h1>
+    <p class="clase1">
+        Este es el primer párrafo perteneciente a la página web. Este solo
+      pertenece a la clase1.
+    </p>
+    <p class="clase2">
+        Este es el segundo párrafo perteneciente a la página web. Este solo
+      pertenece a la clase2.
+    </p>
+    <p class="clase1" id="especial">
+        Este es el tercer párrafo perteneciente a la página web. Este, además de
+      pertenecer a la clase1, también tiene un id especial.
+    </p>
+    <!--Etiqueta div-->
+    <div class="clase1">
+        <p>Párrafo interno dentro de un div para ser seleccionado</p>
+        <p>Segundo párrafo interno dentro de un div para ser seleccionado</p>
+    </div>
+</body>
+</html>
