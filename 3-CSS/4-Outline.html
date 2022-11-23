@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outline vs Border</title>
+    <style>
+      .box {
+        width: 500px;
+        height: 500px;
+        background-color: grey;
+      }
+
+      /*Para border, su tamaño se toma como parte de las dimensiones*/
+      #border {
+        border: 5px solid red;
+      }
+
+      /* Outline no se considera como parte de las dimensiones del elemento y puede
+      superponerse a otros elementos*/
+      #outline {
+        outline: 5px solid blue;
+      }
+      span {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Outline vs Border</h1>
+    <div class="box" id="outline">
+      <p>Esta caja utiliza <span>outline</span></p>
+    </div>
+
+    <div class="box" id="border">
+      <p>Esta caja utiliza <span>border</span></p>
+    </div>
+  </body>
+</html>

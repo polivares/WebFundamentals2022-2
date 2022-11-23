@@ -1,0 +1,24 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background-color:darkgray;
+}
+
+/* Centrado horizontal */
+.box1{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+/* Centrado total (o en cualquier posición)*/
+.box2{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* traslación relativa a sí mismo */
+}

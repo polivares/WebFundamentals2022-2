@@ -1,0 +1,20 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: red;
+}
+
+div#container{
+    width: 900px;
+    height: 600px;
+    background-color: blue;
+    display: flex;
+}
+
+div.cajas{
+    display: block;
+    width: 300px;
+    height: 300px;
+    outline: 2px solid green;
+    background-color: gray;
+}

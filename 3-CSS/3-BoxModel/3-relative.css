@@ -1,0 +1,24 @@
+#container {
+  background-color: yellow;
+  display: inline-block;
+}
+#box-1,
+#box-2,
+#box-3 {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  display: inline-block;
+}
+#box-1 {
+  background-color: green;
+}
+#box-2 {
+  background-color: pink;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+#box-3 {
+  background-color: blue;
+}
