@@ -1,0 +1,40 @@
+.container{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+/* Sintaxis
+@media not|only mediatype and (mediafeature and|or|not mediafeature) {
+  CSS-Code;
+}
+not: Invierte el significado de lo indicado en la query
+only: Previene navegadores antiguos que no soportan media queries aplicar la regla
+mediatype: Medio donde se aplicará la regla. Ej. screen, print (impresora), speech (screenreaders)
+and: Para combinar media features  
+*/
+
+/* Smartphone */
+/* Típicamente, el criterio de umbral para separar dispositivos es
+max-width: 480px
+max-width: 600px
+*/
+@media only screen and (max-width: 600px){
+    .container {
+        background-color: yellow;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 601px){
+    .container {
+        background-color: blue  ;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px){
+    .container {
+        background-color: red;
+    }
+}
