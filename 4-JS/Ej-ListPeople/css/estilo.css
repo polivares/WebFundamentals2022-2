@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box; 
+    font-family: "helvetica neue", arial, verdana, sans-serif;
+    margin: auto 0 auto 0; 
+}
+
+#container{
+    margin: 2% auto auto auto;
+    width: 95%;
+}
+
+#form-container{
+    float: left;
+    vertical-align: top;
+    width:50%;
+    padding: 1%;
+    border: 2px solid black;
+    border-radius: 2em;
+    background-color:cornflowerblue;
+}
+
+#list-container{
+    background-color: coral;
+    display:inline-block;
+    width:50%;
+    margin: auto;
+    border: 2px solid black;
+    padding: 1%;
+    border-radius: 2em;
+}
+
+#nombre{
+    display: block;
+}
